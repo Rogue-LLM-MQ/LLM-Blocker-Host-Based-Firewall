@@ -4,6 +4,6 @@ This script blocks AI/LLM sites (ChatGPT, Gemini, Claude, etc.) using Windows Fi
 
 ## How to use
 1. Right-click PowerShell → Run as Administrator
-2. Run: .\Block-LLM.ps1
-3. To remove rules later: .\Block-LLM.ps1 -Uninstall
+2. Run: LLM_NEW_RULE.ps1
+3. To remove rules later: LLM_NEW_RULE.ps1 -Uninstall
 
