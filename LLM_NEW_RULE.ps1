@@ -13,13 +13,13 @@
   Override the default domain list (optional).
 
 .EXAMPLE
-  .\Block-LLM.ps1
+  .\LLM_NEW_RULE.ps1
 
 .EXAMPLE
-  .\Block-LLM.ps1 -BlockBrowsers
+  .\LLM_NEW_RULE.ps1 -BlockBrowsers
 
 .EXAMPLE
-  .\Block-LLM.ps1 -Uninstall
+  .\LLM_NEW_RULE.ps1 -Uninstall
 #>
 
 [CmdletBinding()]
@@ -172,5 +172,6 @@ Log "Resolved IPs total: $resolvedCount"
 Log "New rules created: $createdCount"
 Log "=== LLM Firewall Block finished at $(Get-Date) ==="
 Write-Host "LLM/ChatGPT blocking rules applied/updated. See log: $LogFile"
+
 
 
