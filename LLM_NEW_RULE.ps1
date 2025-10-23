@@ -1,16 +1,16 @@
 ﻿<# 
 .SYNOPSIS
   Blocks outbound traffic to common LLM/AI domains by resolving their A/AAAA records
-  and creating per-IP block rules. Safe to re-run (idempotent). Includes uninstall.
+  and creating per-IP block rules. Safe to re-run . Includes uninstall.
 
 .PARAMETER BlockBrowsers
-  Also block outbound traffic from major browsers (optional).
+  Also block outbound traffic from major browsers.
 
 .PARAMETER LogFile
-  Custom log path (optional).
+  Custom log path.
 
 .PARAMETER Domains
-  Override the default domain list (optional).
+  Override the default domain list.
 
 .EXAMPLE
   .\LLM_NEW_RULE.ps1
@@ -172,6 +172,7 @@ Log "Resolved IPs total: $resolvedCount"
 Log "New rules created: $createdCount"
 Log "=== LLM Firewall Block finished at $(Get-Date) ==="
 Write-Host "LLM/ChatGPT blocking rules applied/updated. See log: $LogFile"
+
 
 
 
